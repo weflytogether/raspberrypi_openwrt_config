@@ -1,0 +1,18 @@
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option path 'platform/soc/3f300000.mmc/mmc_host/mmc1/mmc1:0001/mmc1:0001:1'
+	option hwmode '11g'
+	option htmode 'HT20'
+	option country 'US'
+	option txpower '8'
+	option distance '10'
+	option channel '11'
+	option disabled '0'
+
+config wifi-iface 'default_radio0'
+	option device 'radio0'
+	option mode 'ap'
+	option network 'lan'
+	option ssid 'Phiota_WiFi'
+	option encryption 'none'
+
